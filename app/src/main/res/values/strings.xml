@@ -1,9 +1,26 @@
 <resources>
-    <string name="app_name">Gestion Étudiants</string>
-    <string name="splash_title">Gestion des Étudiants</string>
-    <string name="splash_subtitle">Application de gestion des données étudiantes</string>
-    <string name="photo">Photo:</string>
-    <string name="nom">Nom :</string>
-    <string name="s_lectionner_une_date">Sélectionner une date</string>
-    <string name="gestion_des_tudiants">Gestion des Étudiants</string>
+    <string name="app_name">projetws</string>
+    <string-array name="villes">
+        <item>Agadir</item>
+        <item>Casablanca</item>
+        <item>Fès</item>
+        <item>Marrakech</item>
+        <item>Meknès</item>
+        <item>Oujda</item>
+        <item>Rabat</item>
+        <item>Tanger</item>
+        <item>Tétouan</item>
+        <item>Laâyoune</item>
+        <item>Guelmim</item>
+        <item>Errachidia</item>
+        <item>El Jadida</item>
+        <item>Khouribga</item>
+        <item>Béni Mellal</item>
+        <item>Nador</item>
+        <item>Ouarzazate</item>
+        <item>Kénitra</item>
+        <item>Settat</item>
+        <item>Safi</item>
+    </string-array>
+
 </resources>

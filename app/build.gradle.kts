@@ -1,15 +1,15 @@
 plugins {
-    id("com.android.application")
+    alias(libs.plugins.android.application)
 }
 
 android {
-    namespace = "com.emsi.projetws"
-    compileSdk = 33
+    namespace = "com.example.projetws"
+    compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.emsi.projetws"
+        applicationId = "com.example.projetws"
         minSdk = 24
-        targetSdk = 33
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -26,7 +26,6 @@ android {
         }
     }
     compileOptions {
-        // Update Java version to 11 (or 17 if your project supports it)
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
@@ -34,22 +33,15 @@ android {
 
 dependencies {
 
-    implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
-    implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
-    
-    // Add Material Design library
-    implementation("com.google.android.material:material:1.9.0")
-    
-    // Volley for network requests
+    implementation(libs.appcompat)
+    implementation(libs.material)
+    implementation(libs.activity)
+    implementation(libs.constraintlayout)
     implementation("com.android.volley:volley:1.2.1")
-    
-    // Gson for JSON parsing
-    implementation("com.google.code.gson:gson:2.8.2")
-    implementation(libs.firebase.crashlytics.buildtools)
-
-    // Testing dependencies
-    testImplementation("junit:junit:4.13.2")
-    androidTestImplementation("androidx.test.ext:junit:1.1.5")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+    implementation("com.google.code.gson:gson:2.10.1")
+    implementation("androidx.recyclerview:recyclerview:1.3.2")
+    implementation(libs.recyclerview)
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.ext.junit)
+    androidTestImplementation(libs.espresso.core)
 }
