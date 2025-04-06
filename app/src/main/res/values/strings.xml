@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Gestion Étudiants</string>
+    <string name="splash_title">Gestion des Étudiants</string>
+    <string name="splash_subtitle">Application de gestion des données étudiantes</string>
+    <string name="photo">Photo:</string>
+    <string name="nom">Nom :</string>
+    <string name="s_lectionner_une_date">Sélectionner une date</string>
+    <string name="gestion_des_tudiants">Gestion des Étudiants</string>
+</resources>

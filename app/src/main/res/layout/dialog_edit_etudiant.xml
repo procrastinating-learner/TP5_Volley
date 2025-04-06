@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Photo Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Photo:"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:id="@+id/editPhotoImageView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#EEEEEE"
+                android:scaleType="centerCrop"
+                android:src="@drawable/diplome" />
+
+            <Button
+                android:id="@+id/editTakePhotoButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prendre photo"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="8dp" />
+        </FrameLayout>
+
+        <!-- Nom Field -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nom:"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:hint="@string/nom"
+            android:id="@+id/editNomEditText"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:inputType="textCapWords" />
+
+        <!-- Prénom Field -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prénom:"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:hint="prenom"
+            android:id="@+id/editPrenomEditText"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:inputType="textCapWords" />
+
+        <!-- Date de naissance Field -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date de naissance:"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:id="@+id/editDateNaissanceTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:text="Sélectionner une date"
+                android:padding="8dp"
+                android:background="#EEEEEE" />
+
+            <Button
+                android:id="@+id/editSelectDateButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choisir"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <!-- Sexe Field -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sexe:"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <RadioGroup
+            android:id="@+id/editSexeRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/editHommeRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Homme"
+                android:layout_marginEnd="16dp" />
+
+            <RadioButton
+                android:id="@+id/editFemmeRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Femme" />
+        </RadioGroup>
+
+        <!-- Ville Field -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ville:"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <Spinner
+
+            android:id="@+id/editVilleSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+
+    </LinearLayout>
+</ScrollView>
